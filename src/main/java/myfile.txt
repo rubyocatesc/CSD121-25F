@@ -1,0 +1,2 @@
+Hello, s! Your age is 23 and you're an adult.
+Your favorite numbers are: 3, 4, and 13
