@@ -4,8 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static lab4.game.Board.Status.*;
-import static lab4.game.Row.*;
-import static lab4.game.Col.*;
+
 
 
 
