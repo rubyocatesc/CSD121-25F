@@ -9,22 +9,26 @@ import static tictactoe.game.PlayerToken.X;
 public class Main {
 
     public static void main(String[] args) {
-
+        //Instructions on how to choose and set-up the players
         Console.println("""
                 Welcome to Tic Tac Toe!
                 Players can be human or computer.  When prompted for player names use one of the following:
                 - To play as a human, just enter a name
                 - To have the player played by the computer enter @ followed by one of the following names:
-                  - TODO: Add the names of the computer players you have implemented here!
+                  - @linus - always picks the next available position starting with top left position, and working right then down one row at a time.
+                  - @omola - looks one move ahead in the game. 
                 """);
+            
         var player1 = Console.promptForPlayer(X);
         var player2 = Console.promptForPlayer(O);
+
         var game = new TicTacToeGame(player1, player2);
 
         while (true) {
 
             // Advance the game based on the player's selected move, and get the results
             var turnRecord = game.doNextTurn();
+
 
             // Display the results of the turn
             Console.println("%s plays %s at %s %s".formatted(turnRecord.whoseTurn().getName(), turnRecord.token(), turnRecord.positionPlayed().row(), turnRecord.positionPlayed().col()));

@@ -52,13 +52,15 @@ public class Console {
             if ( input.startsWith("@") ) {
                 input = input.substring(1).toLowerCase(); // remove the '@' prefix
 
-                switch ( input ) {
+                switch (input) {
                     // E.g.
                     // case "randy" -> { return new Randy(); }
-                    default -> printAlert("TODO: Implement computer players");
+                    case "linus" -> {return new Linus(); }
+                    case "omola" -> {return new Omola(); }
+                    default -> printAlert("Computer player available: Linus");
                 }
             } else {
-                return new Player(input);
+                return new HumanPlayer(input);
             }
         }
     }
