@@ -1,4 +1,4 @@
-These are the questions I asked ChatGPT and Claude.
+These are the questions I asked ChatGPT.
 
 Explain what an abstract class is in Java.
 
@@ -20,3 +20,8 @@ Explain "one move look ahead" in tictactoe
 
 
 I used Chatgpt to explain the question for the reflection but not to answer it. 
+
+
+** I just noticed we have to add the links, I do not sign-in to ChatGPT and not able to save the links
+
+
